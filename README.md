@@ -16,8 +16,7 @@ The Calculator has to fulfill the basic functions and the converter has to conve
 Install my-project with npm
 
 ```bash
-  npm install my-project
-  cd my-project
+  npm install
   npm run dev
   npm run test:unit
 ```
