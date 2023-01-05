@@ -20,6 +20,10 @@
     <div @click="append('0')" class="btn zero">0</div>
     <div @click="dot" class="btn">.</div>
     <div @click="equal" class="btn operator">=</div>
+
+  <div id="conversor">
+    <button type="button" id="button-conversor"><a href="#">Currency converter</a></button>
+  </div>
   </div>
 </template>
 
@@ -87,40 +91,39 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "../sass/styles.scss";
+
 .calculator {
-  margin:   auto;
-  width: 400px;
-  font-size: 40px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(50px, auto);
-  align-content: center
+	margin: auto;
+	width: 400px;
+	font-size: 40px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: minmax(50px, auto);
+	align-content: center;
 }
-
 .display {
-  grid-column: 1 / 5;
-  background-color: #333;
-  color: white;
-  display: grid;
-  align-content: center;
+	grid-column: 1 / 5;
+	background-color: $background-color-1;
+	color: $color_1;
+	display: grid;
+	align-content: center;
 }
-
 .zero {
-  grid-column: 1 / 3;
+	grid-column: 1 / 3;
 }
-
-.btn{
-  background-color: #f2f2f2;
-  border: 1px solid #999;
-  display: grid;
-  align-content: center;
+.btn {
+	background-color: $background-color_2;
+	border: 1px solid #999;
+	display: grid;
+	align-content: center;
 }
-
 .operator {
-  background-color: orange;
-  color: white;
+	background-color: $background-color_3;
+	color: $color_1;
 }
+
 </style>
 
 
