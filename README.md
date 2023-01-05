@@ -8,7 +8,7 @@ We are asked to create a calculator and a converter
 The Calculator has to fulfill the basic functions and the converter has to convert 4 different types of currency.
 ## Documentation
 
-[Skets Figma](https://www.figma.com/file/2LAJ9n9LkAxs6OWvOU7mO2/Calculadora?node-id=0%3A1&t=691PFIkNWk0gyFMO-0)
+[Sketch Figma](https://www.figma.com/file/2LAJ9n9LkAxs6OWvOU7mO2/Calculadora?node-id=0%3A1&t=691PFIkNWk0gyFMO-0)
 
 
 ## Installation
