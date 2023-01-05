@@ -1,7 +1,5 @@
 <template>
-  <div id="app">
     <calculator />
-  </div>
 </template>
 
 <script >

@@ -89,18 +89,21 @@ export default {
 
 <style scoped>
 .calculator {
-  margin:  0 auto;
+  margin:   auto;
   width: 400px;
   font-size: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(50px, auto);
+  align-content: center
 }
 
 .display {
   grid-column: 1 / 5;
   background-color: #333;
   color: white;
+  display: grid;
+  align-content: center;
 }
 
 .zero {
@@ -110,6 +113,8 @@ export default {
 .btn{
   background-color: #f2f2f2;
   border: 1px solid #999;
+  display: grid;
+  align-content: center;
 }
 
 .operator {
