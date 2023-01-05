@@ -109,6 +109,7 @@ export default {
 	color: $color_1;
 	display: grid;
 	align-content: center;
+  padding-left: 1%;
 }
 .zero {
 	grid-column: 1 / 3;
@@ -118,11 +119,14 @@ export default {
 	border: 1px solid #999;
 	display: grid;
 	align-content: center;
+  padding-left: 1%;
 }
 .operator {
 	background-color: $background-color_3;
 	color: $color_1;
 }
+
+
 
 </style>
 
