@@ -92,9 +92,10 @@ export default {
 @import "../sass/styles.scss";
 
 .calculator {
+  padding-top: 4%;
 	margin: auto;
 	width: 400px;
-	font-size: 40px;
+	font-size: 2.5em;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-auto-rows: minmax(50px, auto);
@@ -107,6 +108,7 @@ export default {
 	display: grid;
 	align-content: center;
   padding-left: 1%;
+  border-radius: 0.25rem;
 }
 .zero {
 	grid-column: 1 / 3;
@@ -117,6 +119,7 @@ export default {
 	display: grid;
 	align-content: center;
   padding-left: 1%;
+  font-size: 1em;
 }
 .operator {
 	background-color: $background-color_3;
