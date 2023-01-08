@@ -19,11 +19,11 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="form-group">
-              <label for="I have">I have</label>
+              <label for="ihave">ihave</label>
               <select
                 class="form-control form-control-lg"
-                id="I have"
-                v-model="I have"
+                id="ihave"
+                v-model="ihave"
                 v-on:change="onChange()"
               >
                 <option v-for="(currency, index) in coins" v-bind:key="index">
@@ -34,11 +34,11 @@
           </div>
           <div class="col-lg-6">
             <div class="form-group">
-              <label for="I want">Quiero</label>
+              <label for="iwant">Quiero</label>
               <select
                 class="form-control form-control-lg"
-                id="I want"
-                v-model="I want"
+                id="iwant"
+                v-model="iwant"
                 v-on:change="onChange()"
               >
                 <option v-for="(coin, index) in coins" v-bind:key="index">
@@ -50,9 +50,9 @@
         </div>
         <div class="text-center pt-4">
           <h5 v-if="cantidad > 0">
-            <span class="badge badge-success">{{ quantity }} {{ I have }}</span>
+            <span class="badge badge-success">{{ quantity }} {{ ihave }}</span>
             <span class="badge badge-dark"> SON </span>
-            <span class="badge badge-success">{{ getTotal(total) }} {{ I want }}</span>
+            <span class="badge badge-success">{{ getTotal(total) }} {{ iwant }}</span>
           </h5>
         </div>
       </div>
@@ -65,49 +65,49 @@
       return {
         coins: ["USD", "EUR", "LIBRA"],
         quantity: 0,
-        I have: "USD",
-        I want: "EUR",
+        ihave: "USD",
+        iwant: "EUR",
         total: 0,
       };
     },
     methods: {
       onChange() {
-        switch (this.I have) {
+        switch (this.ihave) {
           // Usuario selecciono que tiene dolares
           case "USD":
-            if (this.I want === "USD") {
+            if (this.iwant === "USD") {
               this.total = this.quantity;
             }
-            if (this.I want === "EUR") {
+            if (this.iwant === "EUR") {
               this.total = this.quantity * 0.84;
             }
-            if (this.I want === "LIBRA") {
+            if (this.iwant === "LIBRA") {
               this.total = this.quantity * 0.75;
             }
             break;
   
           // Usuario selecciono que tiene euros
           case "EUR":
-            if (this.I want === "USD") {
+            if (this.iwant === "USD") {
               this.total = this.quantity * 1.19;
             }
-            if (this.I want === "EUR") {
+            if (this.iwant === "EUR") {
               this.total = this.quantity;
             }
-            if (this.I want === "LIBRA") {
+            if (this.iwant === "LIBRA") {
               this.total = this.quantity * 0.89;
             }
             break;
   
             // Usuario selecciono libra
           case "LIBRA":
-            if (this.I want === "USD") {
+            if (this.iwant === "USD") {
               this.total = this.quantity * 1.33;
             }
-            if (this.I want === "EUR") {
+            if (this.iwant === "EUR") {
               this.total = this.quantity * 1.12;
             }
-            if (this.I want === "LIBRA") {
+            if (this.iwant === "LIBRA") {
               this.total = this.quantity;
             }
             break;
