@@ -21,9 +21,6 @@
     <div @click="dot" class="btn">.</div>
     <div @click="equal" class="btn operator">=</div>
 
-  <div id="conversor">
-    <button type="button" id="button-conversor"><a href="Converter.vue">Currency converter</a></button>
-  </div>
   </div>
 </template>
 

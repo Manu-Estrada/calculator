@@ -19,7 +19,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="form-group">
-              <label for="ihave">ihave</label>
+              <label for="ihave">I have</label>
               <select
                 class="form-control form-control-lg"
                 id="ihave"
@@ -34,7 +34,7 @@
           </div>
           <div class="col-lg-6">
             <div class="form-group">
-              <label for="iwant">Quiero</label>
+              <label for="iwant">I want</label>
               <select
                 class="form-control form-control-lg"
                 id="iwant"
