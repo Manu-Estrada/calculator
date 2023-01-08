@@ -92,7 +92,7 @@ export default {
 @import "../sass/styles.scss";
 
 .calculator {
-  padding-top: 4%;
+  padding-top: 1%;
 	margin: auto;
 	width: 400px;
 	font-size: 2.5em;

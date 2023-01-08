@@ -5,12 +5,12 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/calculator',
+      path: './calculator',
       name: 'calculator',
       component: HomeView
     },
     {
-      path: '/app',
+      path: './app',
       name: 'app',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
@@ -18,7 +18,7 @@ const router = createRouter({
       component: () => import('../App.vue')
     },
     {
-      path: '/converter',
+      path: './converter',
       name: 'Converter',
     }
   ]
