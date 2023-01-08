@@ -121,7 +121,7 @@
   };
   </script>
   
-  <style scoped>
+  <style lang="scss" scoped>
   .badge {
     margin: 2px;
     font-size: 150%;

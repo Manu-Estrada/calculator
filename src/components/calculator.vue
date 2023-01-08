@@ -22,7 +22,7 @@
     <div @click="equal" class="btn operator">=</div>
 
   <div id="conversor">
-    <button type="button" id="button-conversor"><a href="#">Currency converter</a></button>
+    <button type="button" id="button-conversor"><a href="Converter.vue">Currency converter</a></button>
   </div>
   </div>
 </template>
@@ -125,7 +125,6 @@ export default {
 	background-color: $background-color_3;
 	color: $color_1;
 }
-
 
 
 </style>
